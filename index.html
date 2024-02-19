@@ -57,7 +57,7 @@
           <h1 class="mb-5 text-5xl font-bold text-lime-400">E Poribohon</h1>
           <p class="mb-5 w-2/3 text-center item-center">We have an excellent system of taking service based on
             preference, as there is ticketing service for multiple routes via different categories of buses.</p>
-         <a href="main-sec"> <button class="btn btn-primary bg-green-500 text-black">Buy Ticket</button></a>
+          <a href="#main-sec"><button class="btn btn-primary bg-green-500 text-black">Buy Ticket</button></a>
         </div>
       </div>
     </div>
@@ -112,7 +112,7 @@
               </div>
             </div>
             <button class="btn text-green-500 bg-lime-200"><img src="images/seat-green-filled.png"
-                alt=""><span>40</span>seats left</button>
+                alt=""><span>8</span>seats left</button>
           </div>
           <div class="bg-slate-50 space-y-3 mt-8 p-4 rounded-lg">
             <div class="flex justify-between">
@@ -144,8 +144,8 @@
       </div>
     </section>
     <!-- ticket section -->
-    <section class="mt-4 mx-20 bg-white flex justify-between">
-      <div class="space-y-4 p-4 flex-auto">
+    <section class="mt-4 mx-20 bg-white flex justify-evenly ">
+      <div class="space-y-4 p-4 ">
         <h3 class="font-bold text-xl">Select your seat</h3>
         <hr>
         <div class="flex justify-between">
@@ -165,17 +165,19 @@
         </div>
         <!-- seat -->
         <div class="grid grid-cols-5 gap-3">
-          <p>A</p>
-          <button class="btn">A1</button>
-          <button class="btn">A2</button>
-          <button class="btn">A3</button>
-          <button class="btn">A4</button>
-          <p>B</p>
-          <button class="btn">B1</button>
-          <button class="btn">B2</button>
-          <button class="btn">B3</button>
-          <button
-            class="btn">B4</button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+
+          <button class=" w-24">A</button>
+          <button class="btn w-24">A1</button>
+          <button class="btn w-24">A2</button>
+          <button class="btn w-24">A3</button>
+          <button class="btn w-24">A4</button>
+
+          <button class="w-24">B</button>
+          <button class="btn w-24">B1</button>
+          <button class="btn w-24">B2</button>
+          <button class="btn w-24">B3</button>
+          <button class="btn w-24">B4</button>
+
         </div>
 
       </div>
@@ -183,27 +185,51 @@
       <div class="space-y-8">
         <h3 class="text-xl font-bold">Select your seat</h3>
         <hr>
-        <div>
-          <div class="overflow-x-auto bg-slate-50">
+        <div class="bg-slate-50 space-y-3">
+          <div class="overflow-x-auto ">
             <table class="table">
               <!-- head -->
               <thead>
                 <tr>
-                  
-                  <th class="font-bold">Name</th>
+
+                  <th class="font-bold">Seat <span class="bg-green-600 text-white">1</span></th>
                   <th class="font-bold">class</th>
                   <th class="font-bold">price</th>
                 </tr>
               </thead>
               <tbody>
-                
-                
-                
+                <tr>
+                  <td>A1</td>
+                  <td>Economy</td>
+                  <td>550</td>
+                </tr>
+
+
               </tbody>
             </table>
-            <hr>
+
+          </div>
+          <hr>
+          <div class="flex justify-between">
+            <p class="font-bold">Total Price</p>
+            <p class="font-bold">BDT <span>0</span></p>
+          </div>
+          <div>
+            <label class="input input-bordered flex items-center gap-2">
+              <input type="text" class="grow" placeholder="Have any cupon?" />
+              <span><button class="btn bg-lime-400 ">Apply</button></span>
+            </label>
+          </div>
+          <div class="flex justify-between mt-4">
+            <p class="font-bold">Grand Total</p>
+            <p class="font-bold">BDT <span>0</span></p>
+          </div>
+          <hr>
+          <div>
+            <button class="btn bg-lime-400 w-full">Next</button>
           </div>
         </div>
+
       </div>
 
     </section>
