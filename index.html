@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body id="body">
   <header class="mx-20 ">
     <!-- nav bar -->
     <div class="navbar bg-base-100">
@@ -192,13 +192,14 @@
               <thead>
                 <tr>
 
-                  <th class="font-bold text-base">Seat <span id="total-seat" class="bg-green-600 text-white">0</span></th>
+                  <th class="font-bold text-base">Seat <span id="total-seat" class="bg-green-600 text-white">0</span>
+                  </th>
                   <th class="font-bold text-base">class</th>
                   <th class="font-bold text-base">price</th>
                 </tr>
               </thead>
               <tbody id="tbody">
-                
+
 
 
               </tbody>
@@ -211,9 +212,9 @@
             <p class="font-bold">BDT <span id="total-price">0</span></p>
           </div>
           <div>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Have any cupon?" />
-              <span><button class="btn bg-lime-400 ">Apply</button></span>
+            <label id="coupon-sec" class="input input-bordered flex items-center gap-2">
+              <input id="coupon" type="text" class="grow" placeholder="Have any cupon?" />
+              <span><button id="coupon-btn" class="btn bg-lime-400 ">Apply</button></span>
             </label>
           </div>
           <div class="flex justify-between mt-4">
@@ -222,7 +223,21 @@
           </div>
           <hr>
           <div>
-            <button class="btn bg-lime-400 w-full">Next</button>
+            <!-- <button id="next-btn" class="btn bg-lime-400 w-full hidden">Next</button> -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button id="next-btn" class="btn w-full bg-lime-400 hidden" onclick="my_modal_2.showModal()">Next</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box flex flex-col justify-center items-center">
+                <!-- <h3 class="font-bold text-lg">Hello!</h3> -->
+                <img src="images/success.png" alt="">
+                <p class="font-bold text-lime-600 text-xl">Success</p>
+                <p class="py-4 font-bold text-center">Thank you for booking our bus seats. <br> We are working hard to find a best solutions for you</p>
+                <a href="#body"><button class="btn bg-lime-400">continue</button></a>
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
           </div>
         </div>
 

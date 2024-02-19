@@ -22,6 +22,7 @@ for (const seatButton of seatButtons) {
             grandTotal = grandTotal + 550;
             setInnerText('total-price',totalPrice);
             setInnerText('grand-total',grandTotal);
+            showElement('next-btn')
         }
         else {
             alert('You can select maximum of four seats and cannot select same seat twice!!!');
@@ -29,3 +30,19 @@ for (const seatButton of seatButtons) {
 
     })
 }
+// coupon section
+document.getElementById('coupon-btn').addEventListener('click',function(){
+    const couponInput = document.getElementById('coupon');
+    const coupon = couponInput.value;
+    let grandTotal = getInnerText('grand-total');
+    if(coupon === 'NEW15'){
+        grandTotal = grandTotal - grandTotal * 15/100;
+        setInnerText('grand-total',grandTotal);
+        hideElment('coupon-sec');
+    }
+    else if(coupon === 'Couple 20'){
+        grandTotal = grandTotal - grandTotal * 20/100;
+        setInnerText('grand-total',grandTotal);
+        hideElment('coupon-sec');
+    }
+})

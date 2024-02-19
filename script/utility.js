@@ -23,3 +23,11 @@ function createTableElement(element){
     tBody.appendChild(tRow);
 
 }
+function hideElment(element){
+    const name = document.getElementById(element);
+    name.classList.add('hidden');
+}
+function showElement(element){
+    const name = document.getElementById(element);
+    name.classList.remove('hidden');
+}
