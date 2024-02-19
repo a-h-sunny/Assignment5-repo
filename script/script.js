@@ -46,3 +46,7 @@ document.getElementById('coupon-btn').addEventListener('click',function(){
         hideElment('coupon-sec');
     }
 })
+
+document.getElementById('continue-btn').addEventListener('click',function(){
+    window.location.reload();
+})
